@@ -6,6 +6,7 @@ import Signup from './Components/Signup'
 import Navbar from "./Components/Navbar";
 import Logo from './img/Logo.png';
 import Background from './img/background.png'
+import Characters from './Components/Characters';
 
 
 class App extends Component{
@@ -21,6 +22,7 @@ render() {
         <Route exact path="/" component={Signup} />
         <Route path="/login" component={Login} exact />
         <Route path="/home" component={Home} exact />        
+        <Route path="/characters" component={Characters} exact />        
       </Switch>
     </div>
   </div>

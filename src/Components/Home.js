@@ -1,12 +1,14 @@
-import React, {Component} from "react";
+import React from "react";
+import { withRouter, Link } from "react-router-dom";
+import Characters from './Characters'
 
-import Character from './Character'
+const Home = () =>{
 
-class Home extends Component{
-    state={
-        people:[]
-    }
+return(
+    
+    <Characters/>
+    
+    
+)};
 
-}
-
-export default Home;
+export default withRouter(Home);
