@@ -14,22 +14,6 @@ render() {
       <div className="col-12"> 
         <img className="img-fluid mx-auto d-block" src={Logo} alt="logo"/>          
       </div>
-      <div className="col-12">
-      <ul className="nav justify-content-center">
-        <li className="nav-item">
-          <Link className="nav-link active" to="#">Active</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="#">Link</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="#">Link</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="#">Link</Link>
-        </li>
-      </ul>
-      </div>
       <Switch>
         <Route exact path="/" component={SignUp} />
         <Route path="/login" component={Login} exact />

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { withRouter, Link } from "react-router-dom";
 
-const Login = ({history}) =>{
+const Signup = ({history}) =>{
     const [state, setState] = useState({
         userName:'',
         password: '',
@@ -60,14 +60,14 @@ const Login = ({history}) =>{
               required
             />
           </div>
-          <input type="submit" value="Sign In" />
+          <input type="submit" value="Sign Up" />
           {message && <h2 className="text-danger">{message}</h2>}
         </form>
-        <Link to="/">Or Sign Up</Link>
+        <Link to="/login">Or Sign In</Link>
       </div>
     </div>
     );
 
 }
 
-export default withRouter(Login);
+export default withRouter(Signup);
