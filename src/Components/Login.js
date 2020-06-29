@@ -20,7 +20,7 @@ const Login = ({history}) =>{
     const handleSubmit = event =>{
         event.preventDefaul();
         users.forEach(u => { 
-            if(u.userName == userName.toLowerCase && u.password == password.toLowerCase){    
+            if(u.userName === userName.toLowerCase && u.password === password.toLowerCase){    
 
                 sessionStorage.setItem("isLogged",1);
                 history.push("/Home");               
