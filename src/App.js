@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
-import {Route, Switch, Link} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import Home from './Components/Home';
 import Login from './Components/Login'
+import Signup from './Components/Signup'
+import Navbar from "./Components/Navbar";
 import Logo from './img/Logo.png';
 import Background from './img/background.png'
 
@@ -14,8 +16,9 @@ render() {
       <div className="col-12"> 
         <img className="img-fluid mx-auto d-block" src={Logo} alt="logo"/>          
       </div>
+      <Navbar/>
       <Switch>
-        <Route exact path="/" component={SignUp} />
+        <Route exact path="/" component={Signup} />
         <Route path="/login" component={Login} exact />
         <Route path="/home" component={Home} exact />        
       </Switch>

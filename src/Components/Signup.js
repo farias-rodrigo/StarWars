@@ -34,9 +34,9 @@ const Signup = ({history}) =>{
         });
     }
     return(
-        <div className="row">
-      <div className="col-6 text-center mx-auto">
-        <h2 className="text-center">Sign In</h2>
+        <div className="col-12">
+      <div className="col-12 text-center mx-auto">
+        <h2 className="text-center text-white">Sign Up</h2>
         <form onSubmit={handleSubmit}>
           <div className="col-6 mx-auto my-2">
             <input
