@@ -1,4 +1,4 @@
-**This is my first portfolio work, i'm still working on it but i wanted to show it and to show the process while i'm building it**
+**This is my first portfolio work, i'm still working on it but i wanted to show it and show the process while i'm building it**
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
