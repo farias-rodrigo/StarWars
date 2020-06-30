@@ -1,11 +1,10 @@
 import React from "react";
-import { withRouter, Link } from "react-router-dom";
+import { withRouter} from "react-router-dom";
 import Characters from './Characters'
 
 const Home = () =>{
 
-return(
-    
+return(    
     <Characters/>
     
     

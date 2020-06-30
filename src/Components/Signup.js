@@ -20,14 +20,29 @@ const Signup = ({history}) =>{
     const handleSubmit = event =>{
         event.preventDefaul();
         users.forEach(u => { 
-            if(u.userName.toLowerCase === userName.toLowerCase && u.password.toLowerCase === password.toLowerCase){    
+            if(u.userName.toLowerCase !== userName.toLowerCase){  
+              let user = {userName: userName,
+                          password: password        
+                        }  
+              debugger;
 
-                sessionStorage.setItem("isLogged",1);
-                history.push("/Home");               
+              setState({
+                ...state,
+                userName: userName,
+                password: password,
+                ...users,
+                user,
+              })
+              console.log(users);
+              sessionStorage.setItem("isLogged",1);
+              history.push("/Home");
+
             }else{
                 setState({
                     ...state,
-                    message:"LogIn Failed! Please, check your UserName and / or your Password"
+                    userName:"",
+                    password:"",
+                    message:"This userName already exists, please try another one or login"                   
                 })
             }
             
